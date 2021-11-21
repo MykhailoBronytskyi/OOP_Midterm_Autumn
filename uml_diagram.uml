@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/UCU/Lessons_2/OOP/Midterm_Autumn/Midterm_Autumn_task/src/main/java</OriginalElement>
+  <nodes>
+    <node x="362.125" y="478.0">ski_passes.Tourniquet</node>
+    <node x="349.25" y="248.0">ski_passes.Pass_By_Lift</node>
+    <node x="348.49943693693706" y="0.0">abonement.Week_Days</node>
+    <node x="174.25" y="248.0">ski_passes.Pass_By_Season</node>
+    <node x="627.6666666666667" y="123.0">ski_passes.Pass</node>
+    <node x="551.0461711711712" y="373.0">ski_passes.Ski_System</node>
+    <node x="762.1244369369371" y="123.0">abonement.By_Season_Abonement</node>
+    <node x="0.0" y="248.0">abonement.Working_Days</node>
+    <node x="97.5" y="373.0">abonement.Weekend</node>
+    <node x="886.624436936937" y="248.0">abonement.By_Lift_Abonement</node>
+    <node x="496.25" y="248.0">ski_passes.Pass_By_Days</node>
+    <node x="1082.624436936937" y="248.0">abonement.By_Days_Abonement</node>
+    <node x="438.375" y="561.0">Main</node>
+    <node x="585.2494369369371" y="0.0">abonement.By_Type_Abonement</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Main" target="abonement.By_Days_Abonement" relationship="DEPENDENCY">
+      <point x="21.0" y="-15.5" />
+      <point x="501.375" y="540.0" />
+      <point x="717.25" y="540.0" />
+      <point x="717.25" y="530.0" />
+      <point x="1176.124436936937" y="530.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="Main" target="ski_passes.Pass" relationship="DEPENDENCY">
+      <point x="21.0" y="-15.5" />
+      <point x="501.375" y="540.0" />
+      <point x="717.25" y="540.0" />
+      <point x="717.25" y="530.0" />
+      <point x="726.6244369369371" y="530.0" />
+      <point x="726.6244369369371" y="216.0" />
+      <point x="694.3333333333334" y="216.0" />
+      <point x="26.66666666666663" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Tourniquet" target="ski_passes.Ski_System" relationship="DEPENDENCY">
+      <point x="-30.75" y="-15.5" />
+      <point x="392.875" y="456.0" />
+      <point x="246.25" y="456.0" />
+      <point x="246.25" y="446.0" />
+      <point x="644.0461711711712" y="446.0" />
+      <point x="31.0" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Pass_By_Season" target="abonement.Week_Days" relationship="DEPENDENCY">
+      <point x="-38.5" y="-15.5" />
+      <point x="212.75" y="102.0" />
+      <point x="411.49943693693706" y="102.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="abonement.By_Season_Abonement" target="abonement.By_Type_Abonement" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="863.1244369369371" y="102.0" />
+      <point x="974.6244369369371" y="102.0" />
+      <point x="974.6244369369371" y="82.0" />
+      <point x="741.9161036036037" y="82.0" />
+      <point x="62.66666666666663" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Pass_By_Lift" target="abonement.By_Type_Abonement" relationship="DEPENDENCY">
+      <point x="-31.75" y="-15.5" />
+      <point x="381.0" y="226.0" />
+      <point x="407.75" y="226.0" />
+      <point x="407.75" y="206.0" />
+      <point x="495.625" y="206.0" />
+      <point x="495.625" y="92.0" />
+      <point x="517.828265765766" y="92.0" />
+      <point x="517.828265765766" y="52.0" />
+      <point x="616.5827702702704" y="52.0" />
+      <point x="-62.66666666666663" y="15.5" />
+    </edge>
+    <edge source="Main" target="abonement.By_Lift_Abonement" relationship="DEPENDENCY">
+      <point x="21.0" y="-15.5" />
+      <point x="501.375" y="540.0" />
+      <point x="717.25" y="540.0" />
+      <point x="717.25" y="530.0" />
+      <point x="974.624436936937" y="530.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="Main" target="abonement.Weekend" relationship="DEPENDENCY">
+      <point x="21.0" y="-15.5" />
+      <point x="501.375" y="540.0" />
+      <point x="717.25" y="540.0" />
+      <point x="717.25" y="530.0" />
+      <point x="132.04617117117118" y="530.0" />
+      <point x="132.04617117117118" y="456.0" />
+      <point x="154.5" y="456.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Ski_System" target="abonement.Working_Days" relationship="DEPENDENCY">
+      <point x="41.33333333333337" y="-15.5" />
+      <point x="654.3795045045046" y="351.0" />
+      <point x="743.203265765766" y="351.0" />
+      <point x="743.203265765766" y="321.0" />
+      <point x="72.0" y="321.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="Main" target="ski_passes.Ski_System" relationship="DEPENDENCY">
+      <point x="21.0" y="-15.5" />
+      <point x="501.375" y="540.0" />
+      <point x="717.25" y="540.0" />
+      <point x="717.25" y="530.0" />
+      <point x="650.0" y="530.0" />
+      <point x="650.0" y="436.0" />
+      <point x="644.0461711711712" y="436.0" />
+      <point x="31.0" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Pass_By_Season" target="ski_passes.Pass" relationship="GENERALIZATION">
+      <point x="38.5" y="-15.5" />
+      <point x="289.75" y="216.0" />
+      <point x="506.125" y="216.0" />
+      <point x="506.125" y="176.0" />
+      <point x="641.0000000000001" y="176.0" />
+      <point x="-26.66666666666663" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Ski_System" target="ski_passes.Pass" relationship="TO_MANY">
+      <point x="0.0" y="-15.5" />
+      <point x="613.0461711711712" y="351.0" />
+      <point x="644.75" y="351.0" />
+      <point x="644.75" y="226.0" />
+      <point x="667.6666666666667" y="226.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Ski_System" target="abonement.By_Season_Abonement" relationship="DEPENDENCY">
+      <point x="41.33333333333337" y="-15.5" />
+      <point x="654.3795045045046" y="351.0" />
+      <point x="743.203265765766" y="351.0" />
+      <point x="743.203265765766" y="301.0" />
+      <point x="863.1244369369371" y="301.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Pass_By_Lift" target="ski_passes.Pass" relationship="GENERALIZATION">
+      <point x="31.75" y="-15.5" />
+      <point x="444.5" y="216.0" />
+      <point x="506.125" y="216.0" />
+      <point x="506.125" y="176.0" />
+      <point x="641.0000000000001" y="176.0" />
+      <point x="-26.66666666666663" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Ski_System" target="abonement.By_Lift_Abonement" relationship="DEPENDENCY">
+      <point x="41.33333333333337" y="-15.5" />
+      <point x="654.3795045045046" y="351.0" />
+      <point x="743.203265765766" y="351.0" />
+      <point x="743.203265765766" y="331.0" />
+      <point x="974.624436936937" y="331.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="abonement.By_Days_Abonement" target="abonement.By_Type_Abonement" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1176.124436936937" y="102.0" />
+      <point x="974.6244369369371" y="102.0" />
+      <point x="974.6244369369371" y="82.0" />
+      <point x="741.9161036036037" y="82.0" />
+      <point x="62.66666666666663" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Pass_By_Days" target="abonement.By_Type_Abonement" relationship="DEPENDENCY">
+      <point x="-34.5" y="-15.5" />
+      <point x="530.75" y="226.0" />
+      <point x="559.9214527027029" y="226.0" />
+      <point x="559.9214527027029" y="186.0" />
+      <point x="582.5" y="186.0" />
+      <point x="582.5" y="92.0" />
+      <point x="517.828265765766" y="92.0" />
+      <point x="517.828265765766" y="52.0" />
+      <point x="616.5827702702704" y="52.0" />
+      <point x="-62.66666666666663" y="15.5" />
+    </edge>
+    <edge source="abonement.Weekend" target="abonement.Week_Days" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="154.5" y="102.0" />
+      <point x="127.74943693693706" y="102.0" />
+      <point x="127.74943693693706" y="92.0" />
+      <point x="369.49943693693706" y="92.0" />
+      <point x="-42.0" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Tourniquet" target="abonement.Weekend" relationship="DEPENDENCY">
+      <point x="-30.75" y="-15.5" />
+      <point x="392.875" y="456.0" />
+      <point x="246.25" y="456.0" />
+      <point x="246.25" y="436.0" />
+      <point x="154.5" y="436.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Pass_By_Season" target="abonement.By_Type_Abonement" relationship="DEPENDENCY">
+      <point x="-38.5" y="-15.5" />
+      <point x="212.75" y="196.0" />
+      <point x="495.625" y="196.0" />
+      <point x="495.625" y="92.0" />
+      <point x="517.828265765766" y="92.0" />
+      <point x="517.828265765766" y="52.0" />
+      <point x="616.5827702702704" y="52.0" />
+      <point x="-62.66666666666663" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Tourniquet" target="ski_passes.Ski_System" relationship="TO_ONE">
+      <point x="30.75" y="-15.5" />
+      <point x="454.375" y="436.0" />
+      <point x="582.0461711711712" y="436.0" />
+      <point x="-31.0" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Ski_System" target="ski_passes.Pass" relationship="DEPENDENCY">
+      <point x="41.33333333333337" y="-15.5" />
+      <point x="654.3795045045046" y="351.0" />
+      <point x="743.203265765766" y="351.0" />
+      <point x="743.203265765766" y="301.0" />
+      <point x="737.1244369369371" y="301.0" />
+      <point x="737.1244369369371" y="226.0" />
+      <point x="726.6244369369371" y="226.0" />
+      <point x="726.6244369369371" y="216.0" />
+      <point x="694.3333333333334" y="216.0" />
+      <point x="26.66666666666663" y="15.5" />
+    </edge>
+    <edge source="abonement.Working_Days" target="abonement.Week_Days" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="72.0" y="102.0" />
+      <point x="127.74943693693706" y="102.0" />
+      <point x="127.74943693693706" y="92.0" />
+      <point x="369.49943693693706" y="92.0" />
+      <point x="-42.0" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Ski_System" target="abonement.Week_Days" relationship="DEPENDENCY">
+      <point x="41.33333333333337" y="-15.5" />
+      <point x="654.3795045045046" y="351.0" />
+      <point x="743.203265765766" y="351.0" />
+      <point x="743.203265765766" y="301.0" />
+      <point x="338.75" y="301.0" />
+      <point x="338.75" y="102.0" />
+      <point x="411.49943693693706" y="102.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Pass_By_Days" target="abonement.Week_Days" relationship="DEPENDENCY">
+      <point x="-34.5" y="-15.5" />
+      <point x="530.75" y="226.0" />
+      <point x="559.9214527027029" y="226.0" />
+      <point x="559.9214527027029" y="186.0" />
+      <point x="474.625" y="186.0" />
+      <point x="474.625" y="102.0" />
+      <point x="411.49943693693706" y="102.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Pass_By_Days" target="ski_passes.Pass" relationship="GENERALIZATION">
+      <point x="34.5" y="-15.5" />
+      <point x="599.75" y="216.0" />
+      <point x="506.125" y="216.0" />
+      <point x="506.125" y="176.0" />
+      <point x="641.0000000000001" y="176.0" />
+      <point x="-26.66666666666663" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Tourniquet" target="ski_passes.Pass_By_Season" relationship="DEPENDENCY">
+      <point x="-30.75" y="-15.5" />
+      <point x="392.875" y="456.0" />
+      <point x="246.25" y="456.0" />
+      <point x="246.25" y="426.0" />
+      <point x="248.04617117117118" y="426.0" />
+      <point x="248.04617117117118" y="351.0" />
+      <point x="212.75" y="351.0" />
+      <point x="-38.5" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Pass" target="abonement.By_Type_Abonement" relationship="DEPENDENCY">
+      <point x="-20.0" y="-15.5" />
+      <point x="647.6666666666667" y="102.0" />
+      <point x="485.125" y="102.0" />
+      <point x="485.125" y="82.0" />
+      <point x="517.828265765766" y="82.0" />
+      <point x="517.828265765766" y="52.0" />
+      <point x="616.5827702702704" y="52.0" />
+      <point x="-62.66666666666663" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Pass" target="abonement.Week_Days" relationship="TO_ONE">
+      <point x="20.0" y="-15.5" />
+      <point x="687.6666666666667" y="62.0" />
+      <point x="453.49943693693706" y="62.0" />
+      <point x="42.0" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Pass" target="abonement.Week_Days" relationship="DEPENDENCY">
+      <point x="-20.0" y="-15.5" />
+      <point x="647.6666666666667" y="102.0" />
+      <point x="485.125" y="102.0" />
+      <point x="485.125" y="72.0" />
+      <point x="411.49943693693706" y="72.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Tourniquet" target="ski_passes.Pass" relationship="DEPENDENCY">
+      <point x="-30.75" y="-15.5" />
+      <point x="392.875" y="456.0" />
+      <point x="246.25" y="456.0" />
+      <point x="246.25" y="426.0" />
+      <point x="701.3279842342342" y="426.0" />
+      <point x="701.3279842342342" y="226.0" />
+      <point x="726.6244369369371" y="226.0" />
+      <point x="726.6244369369371" y="216.0" />
+      <point x="694.3333333333334" y="216.0" />
+      <point x="26.66666666666663" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Ski_System" target="abonement.By_Type_Abonement" relationship="DEPENDENCY">
+      <point x="41.33333333333337" y="-15.5" />
+      <point x="654.3795045045046" y="351.0" />
+      <point x="743.203265765766" y="351.0" />
+      <point x="743.203265765766" y="301.0" />
+      <point x="751.6244369369371" y="301.0" />
+      <point x="751.6244369369371" y="92.0" />
+      <point x="517.828265765766" y="92.0" />
+      <point x="517.828265765766" y="52.0" />
+      <point x="616.5827702702704" y="52.0" />
+      <point x="-62.66666666666663" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Ski_System" target="ski_passes.Pass_By_Season" relationship="CREATE">
+      <point x="-41.33333333333337" y="-15.5" />
+      <point x="571.7128378378378" y="351.0" />
+      <point x="412.75" y="351.0" />
+      <point x="412.75" y="311.0" />
+      <point x="289.75" y="311.0" />
+      <point x="38.5" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Ski_System" target="abonement.By_Days_Abonement" relationship="DEPENDENCY">
+      <point x="41.33333333333337" y="-15.5" />
+      <point x="654.3795045045046" y="351.0" />
+      <point x="743.203265765766" y="351.0" />
+      <point x="743.203265765766" y="341.0" />
+      <point x="1176.124436936937" y="341.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="abonement.By_Lift_Abonement" target="abonement.By_Type_Abonement" relationship="REALIZATION">
+      <point x="1.1368683772161603E-13" y="-15.5" />
+      <point x="974.6244369369371" y="82.0" />
+      <point x="741.9161036036037" y="82.0" />
+      <point x="62.66666666666663" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Ski_System" target="ski_passes.Pass_By_Lift" relationship="CREATE">
+      <point x="-41.33333333333337" y="-15.5" />
+      <point x="571.7128378378378" y="351.0" />
+      <point x="412.75" y="351.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Pass" target="abonement.By_Type_Abonement" relationship="TO_ONE">
+      <point x="20.0" y="-15.5" />
+      <point x="687.6666666666667" y="62.0" />
+      <point x="679.2494369369371" y="62.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Tourniquet" target="abonement.Working_Days" relationship="DEPENDENCY">
+      <point x="-30.75" y="-15.5" />
+      <point x="392.875" y="456.0" />
+      <point x="246.25" y="456.0" />
+      <point x="246.25" y="426.0" />
+      <point x="72.0" y="426.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Pass_By_Lift" target="abonement.Week_Days" relationship="DEPENDENCY">
+      <point x="-31.75" y="-15.5" />
+      <point x="381.0" y="226.0" />
+      <point x="407.75" y="226.0" />
+      <point x="407.75" y="102.0" />
+      <point x="411.49943693693706" y="102.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ski_passes.Ski_System" target="ski_passes.Pass_By_Days" relationship="CREATE">
+      <point x="-41.33333333333337" y="-15.5" />
+      <point x="571.7128378378378" y="351.0" />
+      <point x="412.75" y="351.0" />
+      <point x="412.75" y="311.0" />
+      <point x="565.25" y="311.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="Main" target="ski_passes.Tourniquet" relationship="CREATE">
+      <point x="-21.0" y="-15.5" />
+      <point x="459.375" y="540.0" />
+      <point x="423.625" y="540.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.43300653594771243" showDependencies="true" x="635.0" y="296.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

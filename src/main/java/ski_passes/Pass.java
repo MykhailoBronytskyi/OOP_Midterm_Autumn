@@ -1,31 +1,35 @@
 package ski_passes;
 
-import abonement.Time_Of_Week_Abonement;
-import abonement.By_Tries_Abonement;
+import abonement.By_Days_Abonement;
+import abonement.Week_Days;
+import abonement.By_Type_Abonement;
+import lombok.Getter;
 
 import java.util.Calendar;
 
-abstract class Pass {
+@Getter
+public abstract class Pass {
 
-    private Time_Of_Week_Abonement what_days_of_week;
-    private By_Tries_Abonement how_many_tries;
-    public Calendar end_date;
+    protected Week_Days what_days;
+    protected By_Type_Abonement type_of_tries;
 
+    protected Integer id;
+    protected Calendar end_date;
+    protected boolean isBlocked = false;
 
-    void use() {
-
+    Pass(Week_Days days_of_week, By_Type_Abonement type_of_tries) {
+        what_days = days_of_week;
+        type_of_tries = type_of_tries;
+        end_date = setEndDate();
     }
-
-    private Calendar getEndDate(){
-        Calendar cal = Calendar.getInstance();
-        cal.add(Calendar.YEAR, 1);
+    Calendar getToday(){
+        Calendar cal  = Calendar.getInstance();
         return cal;
     }
 
-    Pass(Time_Of_Week_Abonement what_days_of_week, By_Tries_Abonement how_many_tries) {
-
-        this.what_days_of_week = what_days_of_week;
-        this.how_many_tries = how_many_tries;
-        this.end_date = getEndDate();
+    private Calendar setEndDate(){
+        Calendar cal = Calendar.getInstance();
+        cal.add(Calendar.YEAR, 1);
+        return cal;
     }
 }
